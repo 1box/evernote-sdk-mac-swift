@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <EvernoteSDK-Mac/EvernoteSDK.h>
+#import <EvernoteSDKMac/EvernoteSDK.h>
 
 @implementation AppDelegate
 

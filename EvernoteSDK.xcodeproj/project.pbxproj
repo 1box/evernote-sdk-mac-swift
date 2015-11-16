@@ -212,8 +212,8 @@
 		437418B9170ADCD700D2BE51 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 437418B7170ADCD700D2BE51 /* Credits.rtf */; };
 		437418BC170ADCD700D2BE51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437418BB170ADCD700D2BE51 /* AppDelegate.m */; };
 		437418BF170ADCD700D2BE51 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437418BD170ADCD700D2BE51 /* MainMenu.xib */; };
-		437418C3170ADCF600D2BE51 /* EvernoteSDK-Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43741864170ADB2400D2BE51 /* EvernoteSDK-Mac.framework */; };
-		437418C7170ADD3F00D2BE51 /* EvernoteSDK-Mac.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43741864170ADB2400D2BE51 /* EvernoteSDK-Mac.framework */; };
+		437418C3170ADCF600D2BE51 /* EvernoteSDKMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43741864170ADB2400D2BE51 /* EvernoteSDKMac.framework */; };
+		437418C7170ADD3F00D2BE51 /* EvernoteSDKMac.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43741864170ADB2400D2BE51 /* EvernoteSDKMac.framework */; };
 		43741906170ADE1100D2BE51 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43741905170ADE1000D2BE51 /* WebKit.framework */; };
 		43741908170ADE1700D2BE51 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43741907170ADE1700D2BE51 /* Security.framework */; };
 		43741909170ADE8E00D2BE51 /* EvernoteSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B2B9D6615449AEE00E5BD44 /* EvernoteSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -300,6 +300,8 @@
 		A9FDF718165C5C7200DC7E4B /* ENConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A9FDF716165C5C7100DC7E4B /* ENConstants.h */; };
 		A9FDF719165C5C7200DC7E4B /* ENConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FDF717165C5C7100DC7E4B /* ENConstants.m */; };
 		A9FDF71B165C5D0300DC7E4B /* ENConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FDF717165C5C7100DC7E4B /* ENConstants.m */; };
+		CBE97BF21BF9DC82009325AF /* EvernoteSDKMac.h in Headers */ = {isa = PBXBuildFile; fileRef = CBE97BEF1BF9DC82009325AF /* EvernoteSDKMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBE97BF31BF9DC94009325AF /* EvernoteSDKMac-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 43741871170ADB2400D2BE51 /* EvernoteSDKMac-Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -326,7 +328,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				437418C7170ADD3F00D2BE51 /* EvernoteSDK-Mac.framework in CopyFiles */,
+				437418C7170ADD3F00D2BE51 /* EvernoteSDKMac.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,13 +436,13 @@
 		43691584170C250600893324 /* SampleApp-Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SampleApp-Mac.entitlements"; sourceTree = "<group>"; };
 		4374185C170AD42900D2BE51 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4374185E170ADA8100D2BE51 /* EvernoteSDK.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = EvernoteSDK.strings; path = EvernoteSDK/internal/Resources/EvernoteSDK.strings; sourceTree = SOURCE_ROOT; };
-		43741864170ADB2400D2BE51 /* EvernoteSDK-Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "EvernoteSDK-Mac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43741864170ADB2400D2BE51 /* EvernoteSDKMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EvernoteSDKMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43741865170ADB2400D2BE51 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		43741868170ADB2400D2BE51 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		43741869170ADB2400D2BE51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4374186A170ADB2400D2BE51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4374186D170ADB2400D2BE51 /* EvernoteSDK-Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EvernoteSDK-Mac-Info.plist"; sourceTree = "<group>"; };
-		43741871170ADB2400D2BE51 /* EvernoteSDK-Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EvernoteSDK-Mac-Prefix.pch"; sourceTree = "<group>"; };
+		4374186D170ADB2400D2BE51 /* EvernoteSDKMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "EvernoteSDKMac-Info.plist"; sourceTree = "<group>"; };
+		43741871170ADB2400D2BE51 /* EvernoteSDKMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EvernoteSDKMac-Prefix.pch"; sourceTree = "<group>"; };
 		437418AC170ADCD600D2BE51 /* SampleApp-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SampleApp-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		437418B0170ADCD700D2BE51 /* SampleApp-Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleApp-Mac-Info.plist"; sourceTree = "<group>"; };
 		437418B2170ADCD700D2BE51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -513,6 +515,7 @@
 		A9D166C4169151D600043DA0 /* TObjective-C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TObjective-C.h"; sourceTree = "<group>"; };
 		A9FDF716165C5C7100DC7E4B /* ENConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENConstants.h; sourceTree = "<group>"; };
 		A9FDF717165C5C7100DC7E4B /* ENConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENConstants.m; sourceTree = "<group>"; };
+		CBE97BEF1BF9DC82009325AF /* EvernoteSDKMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvernoteSDKMac.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -564,7 +567,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				437418C3170ADCF600D2BE51 /* EvernoteSDK-Mac.framework in Frameworks */,
+				437418C3170ADCF600D2BE51 /* EvernoteSDKMac.framework in Frameworks */,
 				437418AD170ADCD600D2BE51 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -694,7 +697,7 @@
 				0BB3D1AD1524ED96001C4534 /* libEvernoteSDK.a */,
 				0BB3D26E1524EF37001C4534 /* SampleApp-iOS.app */,
 				0BDBBC431550A11A003E6681 /* UnitTests.octest */,
-				43741864170ADB2400D2BE51 /* EvernoteSDK-Mac.framework */,
+				43741864170ADB2400D2BE51 /* EvernoteSDKMac.framework */,
 				437418AC170ADCD600D2BE51 /* SampleApp-Mac.app */,
 			);
 			name = Products;
@@ -900,8 +903,9 @@
 		4374186C170ADB2400D2BE51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4374186D170ADB2400D2BE51 /* EvernoteSDK-Mac-Info.plist */,
-				43741871170ADB2400D2BE51 /* EvernoteSDK-Mac-Prefix.pch */,
+				CBE97BEF1BF9DC82009325AF /* EvernoteSDKMac.h */,
+				4374186D170ADB2400D2BE51 /* EvernoteSDKMac-Info.plist */,
+				43741871170ADB2400D2BE51 /* EvernoteSDKMac-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			path = ../EvernoteSDK;
@@ -1152,6 +1156,7 @@
 				433000E7170C497C00CFB953 /* TProcessor.h in Headers */,
 				433000E8170C497C00CFB953 /* TProcessorFactory.h in Headers */,
 				433000E9170C497C00CFB953 /* TBinaryProtocol.h in Headers */,
+				CBE97BF31BF9DC94009325AF /* EvernoteSDKMac-Prefix.pch in Headers */,
 				433000EA170C497C00CFB953 /* TProtocol.h in Headers */,
 				433000EB170C497C00CFB953 /* TProtocolException.h in Headers */,
 				433000EC170C497C00CFB953 /* TProtocolFactory.h in Headers */,
@@ -1164,6 +1169,7 @@
 				4369155B170B0DBB00893324 /* ENOAuthWindowController.h in Headers */,
 				433000C9170C48F100CFB953 /* EvernoteUserStore+Extras.h in Headers */,
 				433000CA170C48F100CFB953 /* EvernoteUserStore.h in Headers */,
+				CBE97BF21BF9DC82009325AF /* EvernoteSDKMac.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1222,11 +1228,11 @@
 			name = UnitTests;
 			productName = UnitTests;
 			productReference = 0BDBBC431550A11A003E6681 /* UnitTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
-		43741863170ADB2400D2BE51 /* EvernoteSDK-Mac */ = {
+		43741863170ADB2400D2BE51 /* EvernoteSDKMac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43741875170ADB2400D2BE51 /* Build configuration list for PBXNativeTarget "EvernoteSDK-Mac" */;
+			buildConfigurationList = 43741875170ADB2400D2BE51 /* Build configuration list for PBXNativeTarget "EvernoteSDKMac" */;
 			buildPhases = (
 				4374185F170ADB2400D2BE51 /* Sources */,
 				43741860170ADB2400D2BE51 /* Frameworks */,
@@ -1237,9 +1243,9 @@
 			);
 			dependencies = (
 			);
-			name = "EvernoteSDK-Mac";
+			name = EvernoteSDKMac;
 			productName = "EvernoteSDK-Mac";
-			productReference = 43741864170ADB2400D2BE51 /* EvernoteSDK-Mac.framework */;
+			productReference = 43741864170ADB2400D2BE51 /* EvernoteSDKMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		437418AB170ADCD600D2BE51 /* SampleApp-Mac */ = {
@@ -1284,7 +1290,7 @@
 			projectRoot = "";
 			targets = (
 				0BB3D1AC1524ED96001C4534 /* EvernoteSDK */,
-				43741863170ADB2400D2BE51 /* EvernoteSDK-Mac */,
+				43741863170ADB2400D2BE51 /* EvernoteSDKMac */,
 				0BB3D26D1524EF37001C4534 /* SampleApp-iOS */,
 				437418AB170ADCD600D2BE51 /* SampleApp-Mac */,
 				0BDBBC421550A11A003E6681 /* UnitTests */,
@@ -1561,7 +1567,7 @@
 /* Begin PBXTargetDependency section */
 		437418C5170ADCFE00D2BE51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 43741863170ADB2400D2BE51 /* EvernoteSDK-Mac */;
+			target = 43741863170ADB2400D2BE51 /* EvernoteSDKMac */;
 			targetProxy = 437418C4170ADCFE00D2BE51 /* PBXContainerItemProxy */;
 		};
 		4386226D170EF43100362BE1 /* PBXTargetDependency */ = {
@@ -1832,6 +1838,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1841,8 +1848,8 @@
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EvernoteSDK/EvernoteSDK-Mac-Prefix.pch";
-				INFOPLIST_FILE = "EvernoteSDK/EvernoteSDK-Mac-Info.plist";
+				GCC_PREFIX_HEADER = "EvernoteSDK/EvernoteSDKMac-Prefix.pch";
+				INFOPLIST_FILE = "EvernoteSDK/EvernoteSDKMac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1861,6 +1868,7 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1870,8 +1878,8 @@
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EvernoteSDK/EvernoteSDK-Mac-Prefix.pch";
-				INFOPLIST_FILE = "EvernoteSDK/EvernoteSDK-Mac-Info.plist";
+				GCC_PREFIX_HEADER = "EvernoteSDK/EvernoteSDKMac-Prefix.pch";
+				INFOPLIST_FILE = "EvernoteSDK/EvernoteSDKMac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1972,7 +1980,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43741875170ADB2400D2BE51 /* Build configuration list for PBXNativeTarget "EvernoteSDK-Mac" */ = {
+		43741875170ADB2400D2BE51 /* Build configuration list for PBXNativeTarget "EvernoteSDKMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43741876170ADB2400D2BE51 /* Debug */,
