@@ -300,8 +300,8 @@
 		A9FDF718165C5C7200DC7E4B /* ENConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A9FDF716165C5C7100DC7E4B /* ENConstants.h */; };
 		A9FDF719165C5C7200DC7E4B /* ENConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FDF717165C5C7100DC7E4B /* ENConstants.m */; };
 		A9FDF71B165C5D0300DC7E4B /* ENConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FDF717165C5C7100DC7E4B /* ENConstants.m */; };
-		CBE97BF21BF9DC82009325AF /* EvernoteSDKMac.h in Headers */ = {isa = PBXBuildFile; fileRef = CBE97BEF1BF9DC82009325AF /* EvernoteSDKMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBE97BF31BF9DC94009325AF /* EvernoteSDKMac-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 43741871170ADB2400D2BE51 /* EvernoteSDKMac-Prefix.pch */; };
+		CB361D561BF9EED300B62159 /* EvernoteSDKMac.h in Headers */ = {isa = PBXBuildFile; fileRef = CB361D551BF9EED300B62159 /* EvernoteSDKMac.h */; };
+		CBE97BFA1BF9DD07009325AF /* EvernoteSDKMac-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = CBE97BF51BF9DCF8009325AF /* EvernoteSDKMac-Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -441,8 +441,6 @@
 		43741868170ADB2400D2BE51 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		43741869170ADB2400D2BE51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4374186A170ADB2400D2BE51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4374186D170ADB2400D2BE51 /* EvernoteSDKMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "EvernoteSDKMac-Info.plist"; sourceTree = "<group>"; };
-		43741871170ADB2400D2BE51 /* EvernoteSDKMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EvernoteSDKMac-Prefix.pch"; sourceTree = "<group>"; };
 		437418AC170ADCD600D2BE51 /* SampleApp-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SampleApp-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		437418B0170ADCD700D2BE51 /* SampleApp-Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleApp-Mac-Info.plist"; sourceTree = "<group>"; };
 		437418B2170ADCD700D2BE51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -515,7 +513,9 @@
 		A9D166C4169151D600043DA0 /* TObjective-C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TObjective-C.h"; sourceTree = "<group>"; };
 		A9FDF716165C5C7100DC7E4B /* ENConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENConstants.h; sourceTree = "<group>"; };
 		A9FDF717165C5C7100DC7E4B /* ENConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENConstants.m; sourceTree = "<group>"; };
-		CBE97BEF1BF9DC82009325AF /* EvernoteSDKMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvernoteSDKMac.h; sourceTree = "<group>"; };
+		CB361D551BF9EED300B62159 /* EvernoteSDKMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EvernoteSDKMac.h; path = EvernoteSDK/EvernoteSDKMac.h; sourceTree = SOURCE_ROOT; };
+		CBE97BF41BF9DCF8009325AF /* EvernoteSDKMac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EvernoteSDKMac-Info.plist"; sourceTree = "<group>"; };
+		CBE97BF51BF9DCF8009325AF /* EvernoteSDKMac-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EvernoteSDKMac-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -892,6 +892,7 @@
 		4374186B170ADB2400D2BE51 /* EvernoteSDK-Mac */ = {
 			isa = PBXGroup;
 			children = (
+				CB361D551BF9EED300B62159 /* EvernoteSDKMac.h */,
 				43691558170B0DBB00893324 /* ENOAuthWindowController.h */,
 				43691559170B0DBB00893324 /* ENOAuthWindowController.m */,
 				4369155A170B0DBB00893324 /* ENOAuthWindowController.xib */,
@@ -903,9 +904,8 @@
 		4374186C170ADB2400D2BE51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CBE97BEF1BF9DC82009325AF /* EvernoteSDKMac.h */,
-				4374186D170ADB2400D2BE51 /* EvernoteSDKMac-Info.plist */,
-				43741871170ADB2400D2BE51 /* EvernoteSDKMac-Prefix.pch */,
+				CBE97BF41BF9DCF8009325AF /* EvernoteSDKMac-Info.plist */,
+				CBE97BF51BF9DCF8009325AF /* EvernoteSDKMac-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			path = ../EvernoteSDK;
@@ -1107,6 +1107,7 @@
 				A9B1E8AA16C3265300D54760 /* ENApplicationBridge_Private.h in Headers */,
 				A9B1E8AB16C3265300D54760 /* ENApplicationRequest.h in Headers */,
 				A9B1E8AC16C3265300D54760 /* ENAuthenticationRequest.h in Headers */,
+				CB361D561BF9EED300B62159 /* EvernoteSDKMac.h in Headers */,
 				A9B1E8AF16C3265300D54760 /* ENLinkNotebookRequest.h in Headers */,
 				A9B1E8B216C3265300D54760 /* ENNewNoteRequest.h in Headers */,
 				A9B1E8B516C3265300D54760 /* ENNoteImportRequest.h in Headers */,
@@ -1155,8 +1156,8 @@
 				433000E6170C497C00CFB953 /* Thrift.h in Headers */,
 				433000E7170C497C00CFB953 /* TProcessor.h in Headers */,
 				433000E8170C497C00CFB953 /* TProcessorFactory.h in Headers */,
+				CBE97BFA1BF9DD07009325AF /* EvernoteSDKMac-Prefix.pch in Headers */,
 				433000E9170C497C00CFB953 /* TBinaryProtocol.h in Headers */,
-				CBE97BF31BF9DC94009325AF /* EvernoteSDKMac-Prefix.pch in Headers */,
 				433000EA170C497C00CFB953 /* TProtocol.h in Headers */,
 				433000EB170C497C00CFB953 /* TProtocolException.h in Headers */,
 				433000EC170C497C00CFB953 /* TProtocolFactory.h in Headers */,
@@ -1169,7 +1170,6 @@
 				4369155B170B0DBB00893324 /* ENOAuthWindowController.h in Headers */,
 				433000C9170C48F100CFB953 /* EvernoteUserStore+Extras.h in Headers */,
 				433000CA170C48F100CFB953 /* EvernoteUserStore.h in Headers */,
-				CBE97BF21BF9DC82009325AF /* EvernoteSDKMac.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

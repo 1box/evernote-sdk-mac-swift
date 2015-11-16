@@ -9,5 +9,6 @@
 #ifndef EvernoteSDKMac_h
 #define EvernoteSDKMac_h
 
+#import <EvernoteSDKMac/EvernoteSDK.h>
 
 #endif /* EvernoteSDKMac_h */
