@@ -20,10 +20,7 @@ Issues
 ----------------
 1. I still cannot find why `let noteStore = EvernoteNoteStore.noteStore()` not worked. Even though `EvernoteNoteStore.businessNoteStore()` is work fine. So if you need that method just use define a new one for yourself with follow code:
 
-        EvernoteNoteStore *noteStore = [[EvernoteNoteStore alloc] initWithSession:[EvernoteSession sharedSession]];
-        noteStore.isBusiness = NO;
-        noteStore.linkedNotebook = nil;
-        return noteStore;
+    let noteStore = EvernoteNoteStore.init(session: EvernoteSession.sharedSession()!)
 
 PS. the `noteStore()` did not appear in the module map file, however I cannot find the reason.
 
